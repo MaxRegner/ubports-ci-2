@@ -21,8 +21,8 @@ jobs:
     runs-on: ubuntu-20.04
 
     env:
-      VENDOR: xiaomi
-      DEVICE: rolex
+      VENDOR: sony
+      DEVICE: kugo
       ANDROID_ROOT: /home/runner/work/halium/
 
     steps:
@@ -48,8 +48,8 @@ jobs:
         mkdir -p ~/bin
         wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P ~/bin
         chmod +x ~/bin/repo
-        git config --global user.name "UBports Redmi 4A CI"
-        git config --global user.email "thisemaildoesnotexist@exist.com"
+        git config --global user.name "MaxRegner"
+        git config --global user.email "max_regner@t-online.de"
 
     - name: Downloading source code
       run: |
